@@ -42,7 +42,7 @@ export default class Input extends Component {
         ) : (
           <Icon.Ionicons
             color={theme.colors.gray}
-            size={theme.sizes.font * 1.35}
+            size={theme.sizes.font * 1.4}
             name={!toggleSecure ? "md-eye" : "md-eye-off"}
           />
         )}

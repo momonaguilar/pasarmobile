@@ -59,8 +59,10 @@ class Browse extends Component {
           <Text h1 bold>
             Browse
           </Text>
-          <Button onPress={() => navigation.navigate("Settings")}>
-            <Image source={profile.avatar} style={styles.avatar} />
+          <Button onPress={() => navigation.navigate("UserProfile")}>
+            <Badge margin={[0, 0, 10]} size={40} color="rgba(41,216,143,0.20)">
+              <Image size={10} source={profile.avatar} style={styles.avatar} />
+            </Badge>
           </Button>
         </Block>
 
@@ -114,8 +116,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: theme.sizes.base * 2,
   },
   avatar: {
-    height: theme.sizes.base * 2.2,
-    width: theme.sizes.base * 2.2,
+    height: theme.sizes.base * 2.0,
+    width: theme.sizes.base * 2.0,
   },
   tabs: {
     borderBottomColor: theme.colors.gray2,

@@ -11,15 +11,19 @@ import {
 import { Button, Block, Input, Text } from "../component";
 import { theme } from "../constants";
 
-const email = "josereymondaguilar@gmail.com";
-const username = "regov123";
-const password = "test123";
+const name = "Jose";
+const address = "Cebu City";
+const postcode = "6000";
+const city = "Cebu";
+const country = "Philippines";
 
-export default class Register extends Component {
+export default class RegisterDetails extends Component {
   state = {
-    email: email,
-    username: username,
-    password: password,
+    name: name,
+    address: address,
+    postcode: postcode,
+    city: city,
+    country: country,
     errors: [],
     loading: false,
   };
@@ -33,14 +37,28 @@ export default class Register extends Component {
     this.setState({ loading: true });
 
     // check with backend API or with some static data
-    if (!email) errors.push("email");
-    if (!username) errors.push("username");
-    if (!password) errors.push("password");
+    if (!name) errors.push("name");
+    if (!address) errors.push("address");
+    if (!postcode) errors.push("postcode");
+    if (!city) errors.push("city");
+    if (!country) errors.push("country");
 
     this.setState({ errors, loading: false });
 
     if (!errors.length) {
-      navigation.navigate("RegisterDetails");
+      Alert.alert(
+        "Success!",
+        "Your account has been created",
+        [
+          {
+            text: "Continue",
+            onPress: () => {
+              navigation.navigate("Browse");
+            },
+          },
+        ],
+        { cancelable: false }
+      );
     }
   }
 
@@ -61,34 +79,46 @@ export default class Register extends Component {
           >
             <Block middle>
               <Input
-                email
-                label="Email"
-                error={hasErrors("email")}
-                style={[styles.input, hasErrors("email")]}
-                defaultValue={this.state.email}
-                onChangeText={(text) => this.setState({ email: text })}
+                label="Name"
+                error={hasErrors("name")}
+                style={[styles.input, hasErrors("name")]}
+                defaultValue={this.state.name}
+                onChangeText={(text) => this.setState({ name: text })}
               />
               <Input
-                label="Username"
-                error={hasErrors("username")}
-                style={[styles.input, hasErrors("username")]}
-                defaultValue={this.state.username}
-                onChangeText={(text) => this.setState({ username: text })}
+                label="Address"
+                error={hasErrors("address")}
+                style={[styles.input, hasErrors("address")]}
+                defaultValue={this.state.address}
+                onChangeText={(text) => this.setState({ address: text })}
               />
               <Input
-                secure
-                label="Password"
-                error={hasErrors("password")}
-                style={[styles.input, hasErrors("password")]}
-                defaultValue={this.state.password}
-                onChangeText={(text) => this.setState({ password: text })}
+                label="Postcode"
+                error={hasErrors("postcode")}
+                style={[styles.input, hasErrors("postcode")]}
+                defaultValue={this.state.postcode}
+                onChangeText={(text) => this.setState({ postcode: text })}
+              />
+              <Input
+                label="City"
+                error={hasErrors("city")}
+                style={[styles.input, hasErrors("city")]}
+                defaultValue={this.state.city}
+                onChangeText={(text) => this.setState({ city: text })}
+              />
+              <Input
+                label="Country"
+                error={hasErrors("country")}
+                style={[styles.input, hasErrors("country")]}
+                defaultValue={this.state.country}
+                onChangeText={(text) => this.setState({ country: text })}
               />
               <Button gradient onPress={() => this.handleRegister()}>
                 {loading ? (
                   <ActivityIndicator size="small" color="white" />
                 ) : (
                   <Text bold white center>
-                    Next
+                    Sign Up
                   </Text>
                 )}
               </Button>

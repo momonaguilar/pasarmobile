@@ -6,9 +6,11 @@ import { createStackNavigator } from "react-navigation-stack";
 import Welcome from "../screens/Welcome";
 import Login from "../screens/Login";
 import Register from "../screens/Register";
+import RegisterDetails from "../screens/RegisterDetails";
 import Explore from "../screens/Explore";
 import Browse from "../screens/Browse";
 import Product from "../screens/Product";
+import UserProfile from "../screens/UserProfile";
 
 import { theme } from "../constants";
 
@@ -17,9 +19,11 @@ const screens = createStackNavigator(
     Welcome,
     Login,
     Register,
+    RegisterDetails,
     Explore,
     Browse,
     Product,
+    UserProfile,
   },
   {
     defaultNavigationOptions: {

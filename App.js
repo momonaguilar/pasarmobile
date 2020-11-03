@@ -1,63 +1,59 @@
 import React from "react";
-import { StyleSheet } from "react-native";
 
-import { AppLoading } from "expo";
-import { Asset } from "expo-asset";
+import { createAppContainer, createSwitchNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation-stack";
 
-import Navigation from "./src/navigation";
-import { Block } from "./src/component";
+import SplashScreen from "./src/screens/SplashScreen";
+import LoginScreen from "./src/screens/LoginScreen";
+import RegisterScreen from "./src/screens/RegisterScreen";
+import RegisterUploadICScreen from "./src/screens/RegisterUploadICScreen";
+import DrawerNavigationRoutes from "./src/screens/DrawerNavigationRoutes";
 
-// import all used images
-const images = [
-  require("./src/assets/icons/back.png"),
-  require("./src/assets/icons/plants.png"),
-  require("./src/assets/icons/seeds.png"),
-  require("./src/assets/icons/flowers.png"),
-  require("./src/assets/icons/sprayers.png"),
-  require("./src/assets/icons/pots.png"),
-  require("./src/assets/icons/fertilizers.png"),
-  require("./src/assets/images/plants_1.png"),
-  require("./src/assets/images/plants_2.png"),
-  require("./src/assets/images/plants_3.png"),
-  require("./src/assets/images/explore_1.png"),
-  require("./src/assets/images/explore_2.png"),
-  require("./src/assets/images/explore_3.png"),
-  require("./src/assets/images/market_1.png"),
-  require("./src/assets/images/avatar.png"),
-];
-export default class App extends React.Component {
-  state = {
-    isLoadingComplete: false,
-  };
+const Auth = createStackNavigator({
+  LoginScreen: {
+    screen: LoginScreen,
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
+  RegisterScreen: {
+    screen: RegisterScreen,
+    navigationOptions: {
+      title: "Register",
+      headerStyle: {
+        backgroundColor: "white",
+      },
+      headerTintColor: "#fff",
+    },
+  },
+  RegisterUploadICScreen: {
+    screen: RegisterUploadICScreen,
+    navigationOptions: {
+      title: "Register",
+      headerStyle: {
+        backgroundColor: "white",
+      },
+      headerTintColor: "#fff",
+    },
+  },
+});
 
-  handleResourcesAsync = async () => {
-    // we're caching all the images
-    // for better performance on the app
+const App = createSwitchNavigator({
+  SplashScreen: {
+    screen: SplashScreen,
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
+  Auth: {
+    screen: Auth,
+  },
+  DrawerNavigationRoutes: {
+    screen: DrawerNavigationRoutes,
+    navigationOptions: {
+      headerShown: false,
+    },
+  },
+});
 
-    const cacheImages = images.map((image) => {
-      return Asset.fromModule(image).downloadAsync();
-    });
-
-    return Promise.all(cacheImages);
-  };
-
-  render() {
-    if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
-      return (
-        <AppLoading
-          startAsync={this.handleResourcesAsync}
-          onError={(error) => console.warn(error)}
-          onFinish={() => this.setState({ isLoadingComplete: true })}
-        />
-      );
-    }
-
-    return (
-      <Block white>
-        <Navigation />
-      </Block>
-    );
-  }
-}
-
-const styles = StyleSheet.create({});
+export default createAppContainer(App);

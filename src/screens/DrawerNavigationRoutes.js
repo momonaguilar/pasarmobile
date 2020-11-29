@@ -14,7 +14,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
   First: {
     screen: HomeScreen,
     navigationOptions: ({ navigation }) => ({
-      title: "Home Product Screen",
+      title: "Product Screen",
       headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
       headerStyle: {
         backgroundColor: "green",
@@ -43,7 +43,7 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
     HomeScreen: {
       screen: FirstActivity_StackNavigator,
       navigationOptions: {
-        drawerLabel: "Home Product Screen",
+        drawerLabel: "Product Screen",
       },
     },
     SettingsScreen: {

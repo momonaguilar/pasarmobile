@@ -29,38 +29,38 @@ const RegisterScreen = (props) => {
 
   const handleSubmitButton = () => {
     setErrortext("");
-    // if (!email) {
-    //   alert("Please fill email");
-    //   return;
-    // }
-    // if (!username) {
-    //   alert("Please fill username");
-    //   return;
-    // }
-    // if (!password) {
-    //   alert("Please fill password");
-    //   return;
-    // }
-    // if (!name) {
-    //   alert("Please fill name");
-    //   return;
-    // }
-    // if (!address) {
-    //   alert("Please fill address");
-    //   return;
-    // }
-    // if (!postCode) {
-    //   alert("Please fill postcode");
-    //   return;
-    // }
-    // if (!city) {
-    //   alert("Please fill city");
-    //   return;
-    // }
-    // if (!country) {
-    //   alert("Please fill country");
-    //   return;
-    // }
+    if (!email) {
+      alert("Please fill email");
+      return;
+    }
+    if (!username) {
+      alert("Please fill username");
+      return;
+    }
+    if (!password) {
+      alert("Please fill password");
+      return;
+    }
+    if (!name) {
+      alert("Please fill name");
+      return;
+    }
+    if (!address) {
+      alert("Please fill address");
+      return;
+    }
+    if (!postCode) {
+      alert("Please fill postcode");
+      return;
+    }
+    if (!city) {
+      alert("Please fill city");
+      return;
+    }
+    if (!country) {
+      alert("Please fill country");
+      return;
+    }
 
     setIsRegistrationSuccess(true);
     console.log("Registration Successful. Please Login to proceed");

@@ -11,9 +11,6 @@ const SplashScreen = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setAnimating(false);
-      //Check if user_id is set or not
-      //If not then send for Authentication
-      //else send to Home Screen
       AsyncStorage.getItem("user_id").then((value) =>
         props.navigation.navigate(
           value === null ? "Auth" : "DrawerNavigationRoutes"

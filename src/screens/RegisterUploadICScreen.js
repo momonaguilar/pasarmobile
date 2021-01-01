@@ -237,8 +237,8 @@ const styles = StyleSheet.create({
   buttonStyle: {
     backgroundColor: "#7DE24E",
     borderWidth: 0,
-    color: "green",
-    borderColor: "green",
+    color: "tomato",
+    borderColor: "tomato",
     height: 40,
     alignItems: "center",
     borderRadius: 30,
@@ -248,18 +248,18 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   buttonTextStyle: {
-    color: "green",
+    color: "tomato",
     paddingVertical: 10,
     fontSize: 16,
   },
   inputStyle: {
     flex: 1,
-    color: "green",
+    color: "tomato",
     paddingLeft: 15,
     paddingRight: 15,
     borderWidth: 1,
     borderRadius: 30,
-    borderColor: "green",
+    borderColor: "tomato",
   },
   errorTextStyle: {
     color: "red",

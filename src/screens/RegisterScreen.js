@@ -110,7 +110,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(Email) => setEmail(Email)}
               placeholder="Email"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               keyboardType="email-address"
               returnKeyType="next"
               onSubmitEditing={Keyboard.dismiss}
@@ -122,7 +122,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(UserName) => setUserName(UserName)}
               placeholder="Username"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               autoCapitalize="sentences"
               returnKeyType="next"
               onSubmitEditing={Keyboard.dismiss}
@@ -134,7 +134,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(Password) => setPassword(Password)}
               placeholder="Password"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               keyboardType="default"
               onSubmitEditing={Keyboard.dismiss}
               blurOnSubmit={false}
@@ -146,7 +146,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(Name) => setName(Name)}
               placeholder="Name"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               autoCapitalize="sentences"
               returnKeyType="next"
               onSubmitEditing={Keyboard.dismiss}
@@ -159,7 +159,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(Address) => setAddress(Address)}
               placeholder="Address"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               keyboardType="numeric"
               onSubmitEditing={Keyboard.dismiss}
               blurOnSubmit={false}
@@ -170,7 +170,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(Postcode) => setPostcode(Postcode)}
               placeholder="Postcode"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               autoCapitalize="sentences"
               returnKeyType="next"
               onSubmitEditing={Keyboard.dismiss}
@@ -182,7 +182,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(City) => setCity(City)}
               placeholder="City"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               autoCapitalize="sentences"
               returnKeyType="next"
               onSubmitEditing={Keyboard.dismiss}
@@ -194,7 +194,7 @@ const RegisterScreen = (props) => {
               style={styles.inputStyle}
               onChangeText={(Country) => setCountry(Country)}
               placeholder="Country"
-              placeholderTextColor="green"
+              placeholderTextColor="tomato"
               autoCapitalize="sentences"
               returnKeyType="next"
               onSubmitEditing={Keyboard.dismiss}

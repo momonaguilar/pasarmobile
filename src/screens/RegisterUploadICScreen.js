@@ -3,12 +3,9 @@ import React, { useState } from "react";
 //all required component
 import {
   StyleSheet,
-  TextInput,
   View,
   Text,
   Image,
-  KeyboardAvoidingView,
-  Keyboard,
   TouchableOpacity,
   ScrollView,
   ImageBackground,
@@ -66,13 +63,13 @@ const RegisterUploadICScreen = (props) => {
         style={styles.panelButton}
         onPress={takePhotoFromCamera}
       >
-        <Text style={styles.panelButtonTitle}>Take Photo</Text>
+        <Text style={styles.panelButtonTitle}>Take photo</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.panelButton}
         onPress={choosePhotoFromLibrary}
       >
-        <Text style={styles.panelButtonTitle}>Choose From Library</Text>
+        <Text style={styles.panelButtonTitle}>Choose from library</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.panelButton}

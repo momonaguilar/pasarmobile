@@ -35,7 +35,7 @@ const RegisterUploadICScreen = (props) => {
       cropping: true,
       compressImageQuality: 0.7,
     }).then((image) => {
-      console.log(image);
+      console.log("INFO: Image oject: ", image);
       setImage(image.path);
       this.bs.current.snapTo(1);
     });
@@ -48,7 +48,7 @@ const RegisterUploadICScreen = (props) => {
       cropping: true,
       compressImageQuality: 0.7,
     }).then((image) => {
-      console.log(image);
+      console.log("INFO: Image oject: ", image);
       setImage(image.path);
       this.bs.current.snapTo(1);
     });

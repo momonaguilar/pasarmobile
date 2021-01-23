@@ -51,7 +51,7 @@ const LoginScreen = (props) => {
     if (!errors.length) {
       setLoading(false);
       AsyncStorage.setItem("user_id", userEmail);
-      console.log(userEmail);
+      console.log("INFO: User email:", userEmail);
       props.navigation.navigate("DrawerNavigationRoutes");
     }
   };

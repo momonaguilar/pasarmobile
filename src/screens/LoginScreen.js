@@ -15,7 +15,7 @@ import {
 import AsyncStorage from "@react-native-community/async-storage";
 import Loader from "./components/loader";
 
-const VALID_EMAIL = "josereymondaguilar@gmail.com";
+const VALID_EMAIL = "jose.for.dev@gmail.com";
 const VALID_PASSWORD = "regov123";
 
 const LoginScreen = (props) => {

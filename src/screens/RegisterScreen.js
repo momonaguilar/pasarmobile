@@ -78,13 +78,13 @@ const RegisterScreen = (props) => {
           source={require("../images/success.png")}
           style={{ height: 150, resizeMode: "contain", alignSelf: "center" }}
         />
-        <Text style={styles.successTextStyle}>Registration Successful.</Text>
+        <Text style={styles.successTextStyle}>Registration successful.</Text>
         <TouchableOpacity
           style={styles.buttonStyle}
           activeOpacity={0.5}
           onPress={() => props.navigation.navigate("RegisterUploadICScreen")}
         >
-          <Text style={styles.buttonTextStyle}>Login Now</Text>
+          <Text style={styles.buttonTextStyle}>Login now</Text>
         </TouchableOpacity>
       </View>
     );

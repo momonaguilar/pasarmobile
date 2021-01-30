@@ -57,7 +57,7 @@ const RegisterUploadICScreen = (props) => {
   renderInner = () => (
     <View style={styles.panel}>
       <View style={{ alignItems: "center" }}>
-        <Text style={styles.panelTitle}>Upload IC</Text>
+        <Text style={styles.panelTitle}>Upload photo</Text>
       </View>
       <TouchableOpacity
         style={styles.panelButton}

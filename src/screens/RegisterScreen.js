@@ -169,7 +169,7 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(Postcode) => setPostcode(Postcode)}
-              placeholder="Postcode"
+              placeholder="Post code"
               placeholderTextColor="tomato"
               autoCapitalize="sentences"
               returnKeyType="next"

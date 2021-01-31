@@ -23,7 +23,7 @@ const SplashScreen = (props) => {
     <View style={styles.container}>
       <Image
         source={require("../images/pasarmobile.png")}
-        style={{ width: "90%", resizeMode: "contain", margin: 30 }}
+        style={{ width: "80%", resizeMode: "contain", margin: 30 }}
       />
       <ActivityIndicator
         animating={animating}

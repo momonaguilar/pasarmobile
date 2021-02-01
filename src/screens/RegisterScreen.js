@@ -109,7 +109,7 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(Email) => setEmail(Email)}
-              placeholder="Email"
+              placeholder="E-mail"
               placeholderTextColor="tomato"
               keyboardType="email-address"
               returnKeyType="next"
@@ -121,7 +121,7 @@ const RegisterScreen = (props) => {
             <TextInput
               style={styles.inputStyle}
               onChangeText={(UserName) => setUserName(UserName)}
-              placeholder="Username"
+              placeholder="User name"
               placeholderTextColor="tomato"
               autoCapitalize="sentences"
               returnKeyType="next"

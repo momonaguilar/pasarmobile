@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-
-// required component
 import { ActivityIndicator, View, StyleSheet, Image } from "react-native";
 import AsyncStorage from "@react-native-community/async-storage";
 

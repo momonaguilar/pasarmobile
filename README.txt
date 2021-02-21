@@ -17,3 +17,5 @@ TODO:
 SETUP:
 1. run npm install
 2. run expo start
+
+Development on 1.0.1 in progress

@@ -30,35 +30,35 @@ const RegisterScreen = (props) => {
   const handleSubmitButton = () => {
     setErrortext("");
     if (!email) {
-      alert("Please fill email");
+      alert("Email required");
       return;
     }
     if (!username) {
-      alert("Please fill username");
+      alert("Username required");
       return;
     }
     if (!password) {
-      alert("Please fill password");
+      alert("Password required");
       return;
     }
     if (!name) {
-      alert("Please fill name");
+      alert("Name required");
       return;
     }
     if (!address) {
-      alert("Please fill address");
+      alert("Address required");
       return;
     }
     if (!postCode) {
-      alert("Please fill postcode");
+      alert("Postcode required");
       return;
     }
     if (!city) {
-      alert("Please fill city");
+      alert("City required");
       return;
     }
     if (!country) {
-      alert("Please fill country");
+      alert("Country required");
       return;
     }
 

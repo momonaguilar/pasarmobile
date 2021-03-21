@@ -114,7 +114,7 @@ const RegisterUploadICScreen = (props) => {
           activeOpacity={0.5}
           onPress={() => props.navigation.navigate("LoginScreen")}
         >
-          <Text style={styles.buttonTextStyle}>LOGIN</Text>
+          <Text style={styles.buttonTextStyle}>Login</Text>
         </TouchableOpacity>
       </View>
     );
@@ -195,7 +195,7 @@ const RegisterUploadICScreen = (props) => {
               </View>
             </TouchableOpacity>
             <Text style={{ marginTop: 10, fontSize: 18, fontWeight: "bold" }}>
-              Upload IC Photo
+              Upload IC photo
             </Text>
           </View>
           <TouchableOpacity
@@ -203,7 +203,7 @@ const RegisterUploadICScreen = (props) => {
             activeOpacity={0.5}
             onPress={handleSubmitButton}
           >
-            <Text style={styles.buttonTextStyle}>SUBMIT</Text>
+            <Text style={styles.buttonTextStyle}>Submit</Text>
           </TouchableOpacity>
         </Animated.View>
       </ScrollView>

@@ -78,7 +78,7 @@ const LoginScreen = (props) => {
                 style={styles.inputStyle}
                 onChangeText={(UserEmail) => setUserEmail(UserEmail)}
                 defaultValue={VALID_EMAIL}
-                placeholder="Enter Email"
+                placeholder="Enter e-mail"
                 placeholderTextColor="tomato"
                 autoCapitalize="none"
                 keyboardType="email-address"
@@ -94,7 +94,7 @@ const LoginScreen = (props) => {
                 style={styles.inputStyle}
                 onChangeText={(UserPassword) => setUserPassword(UserPassword)}
                 defaultValue={VALID_PASSWORD}
-                placeholder="Enter Password"
+                placeholder="Enter password"
                 placeholderTextColor="tomato"
                 keyboardType="default"
                 onSubmitEditing={Keyboard.dismiss}

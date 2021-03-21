@@ -90,7 +90,7 @@ const RegisterUploadICScreen = (props) => {
     // send photo to server
 
     setIsRegistrationSuccess(true);
-    console.log("INFO: Registration Successful! Please Login to proceed");
+    console.log("INFO: Registration successful! Please login to proceed");
   };
   if (isRegistraionSuccess) {
     return (

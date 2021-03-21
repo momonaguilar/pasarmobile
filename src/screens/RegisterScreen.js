@@ -209,7 +209,7 @@ const RegisterScreen = (props) => {
             activeOpacity={0.5}
             onPress={() => props.navigation.navigate("RegisterUploadICScreen")}
           >
-            <Text style={styles.buttonTextStyle}>CONTINUE</Text>
+            <Text style={styles.buttonTextStyle}>Continue</Text>
           </TouchableOpacity>
         </KeyboardAvoidingView>
       </ScrollView>

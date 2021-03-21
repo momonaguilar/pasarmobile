@@ -28,7 +28,7 @@ const SecondActivity_StackNavigator = createStackNavigator({
   First: {
     screen: SettingsScreen,
     navigationOptions: ({ navigation }) => ({
-      title: "Setting Screen",
+      title: "Setting screen",
       headerLeft: () => <NavigationDrawerHeader navigationProps={navigation} />,
       headerStyle: {
         backgroundColor: "green",

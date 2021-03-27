@@ -24,16 +24,16 @@ const CustomSidebarMenu = (props) => {
       props.navigation.toggleDrawer();
       Alert.alert(
         "Logout",
-        "Confirm logout?",
+        "Are you sure you want to logout?",
         [
           {
-            text: "Cancel",
+            text: "No",
             onPress: () => {
               return null;
             },
           },
           {
-            text: "Confirm",
+            text: "Yes",
             onPress: () => {
               AsyncStorage.clear();
               props.navigation.navigate("Auth");

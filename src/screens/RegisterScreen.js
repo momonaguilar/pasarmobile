@@ -30,40 +30,40 @@ const RegisterScreen = (props) => {
   const handleSubmitButton = () => {
     setErrortext("");
     if (!email) {
-      alert("Email required");
+      alert("Email is a required field");
       return;
     }
     if (!username) {
-      alert("Username required");
+      alert("Username is a required field");
       return;
     }
     if (!password) {
-      alert("Password required");
+      alert("Password is a required field");
       return;
     }
     if (!name) {
-      alert("Name required");
+      alert("Name is a required field");
       return;
     }
     if (!address) {
-      alert("Address required");
+      alert("Address is a required field");
       return;
     }
     if (!postCode) {
-      alert("Postcode required");
+      alert("Postcode is a required field");
       return;
     }
     if (!city) {
-      alert("City required");
+      alert("City is a required field");
       return;
     }
     if (!country) {
-      alert("Country required");
+      alert("Country is a required field");
       return;
     }
 
     setIsRegistrationSuccess(true);
-    console.log("Registration successful. Please login to proceed");
+    console.log("Registration successful. Please login to proceed.");
   };
   if (isRegistraionSuccess) {
     return (

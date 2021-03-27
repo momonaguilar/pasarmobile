@@ -31,11 +31,11 @@ const LoginScreen = (props) => {
     const errors = [];
     setErrortext("");
     if (!userEmail) {
-      alert("Email required");
+      alert("Email is required");
       return;
     }
     if (!userPassword) {
-      alert("Password required");
+      alert("Password is required");
       return;
     }
     setLoading(true);

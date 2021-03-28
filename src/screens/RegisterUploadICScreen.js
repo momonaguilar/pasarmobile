@@ -32,7 +32,7 @@ const RegisterUploadICScreen = (props) => {
       cropping: true,
       compressImageQuality: 0.7,
     }).then((image) => {
-      console.log("INFO: Image oject: ", image);
+      console.log("INFO: Photo from camera image oject: ", image);
       setImage(image.path);
       this.bs.current.snapTo(1);
     });
@@ -45,7 +45,7 @@ const RegisterUploadICScreen = (props) => {
       cropping: true,
       compressImageQuality: 0.7,
     }).then((image) => {
-      console.log("INFO: Image oject: ", image);
+      console.log("INFO: Photo from library image oject: ", image);
       setImage(image.path);
       this.bs.current.snapTo(1);
     });
@@ -90,7 +90,7 @@ const RegisterUploadICScreen = (props) => {
     // send photo to server
 
     setIsRegistrationSuccess(true);
-    console.log("INFO: Registration successful! Please login to proceed");
+    console.log("INFO: Registration is successful! Please login to proceed.");
   };
   if (isRegistraionSuccess) {
     return (

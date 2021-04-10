@@ -63,7 +63,12 @@ const RegisterScreen = (props) => {
     }
 
     setIsRegistrationSuccess(true);
-    console.log("Registration is successful. Please login to proceed.");
+    console.log("INFO: Registration success.");
+    Alert.alert(
+        "Success",
+        "Registration is successful. Please login to proceed.",
+        { cancelable: false }
+      );
   };
   if (isRegistraionSuccess) {
     return (

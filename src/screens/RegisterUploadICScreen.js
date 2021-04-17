@@ -195,7 +195,7 @@ const RegisterUploadICScreen = (props) => {
               </View>
             </TouchableOpacity>
             <Text style={{ marginTop: 10, fontSize: 18, fontWeight: "bold" }}>
-              Upload IC photo
+              Upload IC
             </Text>
           </View>
           <TouchableOpacity

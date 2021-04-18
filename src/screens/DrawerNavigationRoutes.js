@@ -43,13 +43,13 @@ const DrawerNavigatorRoutes = createDrawerNavigator(
     HomeScreen: {
       screen: FirstActivity_StackNavigator,
       navigationOptions: {
-        drawerLabel: "Product",
+        drawerLabel: "Products",
       },
     },
     SettingsScreen: {
       screen: SecondActivity_StackNavigator,
       navigationOptions: {
-        drawerLabel: "Setting",
+        drawerLabel: "Settings",
       },
     },
   },

@@ -15,12 +15,12 @@ const CustomSidebarMenu = (props) => {
     },
     {
       navOptionName: "Logout",
-      screenToNavigate: "logout",
+      screenToNavigate: "Logout",
     },
   ];
 
   const handleClick = (index, screenToNavigate) => {
-    if (screenToNavigate == "logout") {
+    if (screenToNavigate == "Logout") {
       props.navigation.toggleDrawer();
       Alert.alert(
         "Logout",
